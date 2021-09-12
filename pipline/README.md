@@ -160,10 +160,10 @@
 
   - 클라이언트 Log
 
-    ![client](/Users/hyunjaewook/Documents/project/gradleproject/readme res/client.png)
+    ![client](https://github.com/ssg02138/2021ESWContest_energy_6010/blob/master/pipline/readme%20res/client.png?raw=true)
 
   - Redis
 
-     ![redis](/Users/hyunjaewook/Documents/project/gradleproject/readme res/redis.png)
+     ![redis](https://github.com/ssg02138/2021ESWContest_energy_6010/blob/master/pipline/readme%20res/redis.png?raw=true)
 
-  - Elasticsearch![elasticsearch](/Users/hyunjaewook/Documents/project/gradleproject/readme res/elasticsearch.png)
+  - Elasticsearch![elasticsearch](https://github.com/ssg02138/2021ESWContest_energy_6010/blob/master/pipline/readme%20res/elasticsearch.png?raw=true)
