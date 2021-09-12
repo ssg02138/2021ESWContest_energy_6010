@@ -21,7 +21,7 @@
   - Redis
 
     ```
-    docker run (--rm) --name redis -p 10000:6000 -v /Users/hyunjaewook/Documents/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:latest redis-server /usr/local/etc/redis/redis.conf --appendonly yes
+    docker run (--rm) --name redis -p 10000:6000 -v /Users/user/Documents/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:latest redis-server /usr/local/etc/redis/redis.conf --appendonly yes
 
   - Redis-cli
 
@@ -166,4 +166,6 @@
 
      ![redis](https://github.com/ssg02138/2021ESWContest_energy_6010/blob/master/pipline/readme%20res/redis.png?raw=true)
 
-  - Elasticsearch![elasticsearch](https://github.com/ssg02138/2021ESWContest_energy_6010/blob/master/pipline/readme%20res/elasticsearch.png?raw=true)
+  - Elasticsearch
+
+     ![](https://github.com/ssg02138/2021ESWContest_energy_6010/blob/master/pipline/readme%20res/elasticsearch.png?raw=true)
