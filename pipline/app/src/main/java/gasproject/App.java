@@ -105,7 +105,7 @@ public class App {
                     (int)jsonObject.get("IoTState"));
 
 
-            elasticSearch.closeRest();
+            elasticSearch.closeClient();
             redis.closeRedis();
         }
 

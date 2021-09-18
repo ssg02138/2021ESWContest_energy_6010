@@ -4,7 +4,7 @@
 
 가스에너지 대회 개발 및 적용 가이드
 
-## 개발환경:
+## 개발환경
 
 - macOS Catalina 10.15.7
 - Java 1.8.0_281
@@ -154,7 +154,37 @@
           }
   ```
 
-  
+
+## API
+
+### Redis.java
+
+| 함수                                                         | 설명                             |
+| ------------------------------------------------------------ | -------------------------------- |
+| ```Redis(String host, int port, int timeout,String password)``` | Redis  객체를 초기화             |
+| ```setMessage(String key, String msg)```                     | Redis에 메세지 적재              |
+| ```getMessage(String key)```                                 | Redis로부터 메세지 반환          |
+| ```deleteMassage(String key)```                              | Redis의 메세지 삭제              |
+| ```pipelineSet(ArrayList<GasDTO> list)```                    | Redis에 파이프라인 방식으로 적재 |
+| ```closeRedis()```                                           | Redis 연결 해제                  |
+
+### GasDTO.java
+
+| 함수                                                         | 설명                  |
+| ------------------------------------------------------------ | --------------------- |
+| ```GasDTO( String franchiseeID, String IoTID, int IoTType, double date, int IoTState)``` | Redis의 데이터 양식.  |
+| get*(Type date)                                              | 각 변수 별 Getter함수 |
+| set*()                                                       | 각 변수 별 Setter함수 |
+
+ElasticSearch.java
+
+| 함수                                                         | 설명                        |
+| ------------------------------------------------------------ | --------------------------- |
+| ``create(String index, String type, String franchiseeID, String IoTID, int IoTType, double date, int IoTState)`` | ElasticSearch에 데이터 적재 |
+| ``searchByHash(String index, String hash)``                  | Hash 값으로 데이터 반환     |
+| closeClient()                                                | ElasticSearch 연결 해제     |
+
+
 
 ## 테스트 결과 예제
 
